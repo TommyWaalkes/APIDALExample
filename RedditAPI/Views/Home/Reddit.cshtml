@@ -1,0 +1,12 @@
+﻿@model IEnumerable<RedditAPI.Models.RedditPost>
+
+@ViewBag.r
+@foreach (var o in Model)
+{
+
+    <a href="@o.LinkURL">
+        <h2>@o.Title</h2>
+
+        <img src="@o.ImageURL" />
+    </a>
+}
